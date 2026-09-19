@@ -1,36 +1,43 @@
-Ex.No:5(B) SERIALIZATION AND DESERIALIZATION
-QUESTION:
-Write a Java program to serialize a collection of objects (like ArrayList) into a file.
+# Ex.No:5(B) SERIALIZATION AND DESERIALIZATION 
 
-AIM:
-To write a Java program that serializes a collection of Student objects (ArrayList) into a file and deserializes it back, demonstrating object persistence using Java Serialization.
+## QUESTION:
+Write a Java program to serialize a collection of objects (like ArrayList<Student>) into a file.
 
-ALGORITHM :
-Create a Student class and implement the Serializable interface.
+## AIM:
+To write a Java program that serializes a collection of Student objects (ArrayList<Student>) into a file and deserializes it back, demonstrating object persistence using Java Serialization.
 
-Store id, name, and marks as attributes and override toString() for readable output.
+## ALGORITHM :
+1. Create a Student class and implement the Serializable interface.
 
-Read the number of students from the user.
+2. Store id, name, and marks as attributes and override toString() for readable output.
 
-For each student, read id, name, and marks and add them to an ArrayList.
+3. Read the number of students from the user.
 
-Implement serializeStudents() to create an ObjectOutputStream over a FileOutputStream.
+4. For each student, read id, name, and marks and add them to an ArrayList<Student>.
 
-Write the list of students into the file.
+5. Implement serializeStudents() to create an ObjectOutputStream over a FileOutputStream.
 
-Implement deserializeStudents() to create an ObjectInputStream over a FileInputStream, read the list back into memory.
+6.  Write the list of students into the file.
 
-Print the deserialized student objects to verify successful serialization and deserialization.
+7. Implement deserializeStudents() to create an ObjectInputStream over a FileInputStream, read the list back into memory.
 
-Close the scanner.
+8. Print the deserialized student objects to verify successful serialization and deserialization.
 
-PROGRAM:
+9. Close the scanner.
+
+
+
+## PROGRAM:
+ ```
 /*
 Program to implement a Serialization and Deserialization using Java
-Developed by: SELVARANI S
+Developed by:SELVARANI S
 RegisterNumber: 212224040301
 */
-SOURCE CODE:
+```
+
+## SOURCE CODE:
+```
 import java.io.*;
 import java.util.*;
 
@@ -110,7 +117,18 @@ public class StudentSerializationUserInput {
         scanner.close();
     }
 }
-OUTPUT:
-image
-RESULT:
+```
+
+
+## OUTPUT:
+<img width="1253" height="531" alt="image" src="https://github.com/user-attachments/assets/b017eac9-5975-417a-b46a-fa465087a91b" />
+
+
+
+## RESULT:
 Therfor the program successfully serializes an ArrayList of Student objects into a file and restores them through deserialization.
+
+
+
+
+
